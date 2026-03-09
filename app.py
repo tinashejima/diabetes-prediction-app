@@ -9,7 +9,7 @@ import shap
 app = Flask(__name__)
 
 # Load the model
-model = pickle.load(open('ensemble_model.pkl', 'rb'))
+model = pickle.load(open('rf_model.pkl', 'rb'))
 
 # Initialize SHAP explainer (do this once at startup)
 explainer = None
